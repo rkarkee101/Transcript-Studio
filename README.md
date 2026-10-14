@@ -62,7 +62,7 @@ For later sessions, use **`START.cmd`**. You normally run setup only for the ini
 8. Keep the computer awake while the app downloads the audio and transcribes it. The first use of a model also downloads that model's files.
 9. When finished, click **Open transcript**, **Download TXT**, or **Open folder**.
 
-The default output location is **Documents\YouTubeTranscripts** in your Windows Documents folder. If Documents is redirected to OneDrive or another location, the app follows that location. You can choose a different folder.
+
 
 The chosen output folder receives only the final **`.txt`** transcript. It includes the video title and source link, selected transcription settings, creation time, and optional timestamps. Temporary audio is used during processing; model downloads are cached separately for reuse.
 
