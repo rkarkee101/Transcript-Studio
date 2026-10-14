@@ -16,18 +16,17 @@ Attach the finished TXT file to an LLM (ChatGPT, Claude, Gemini, etc.) to explor
 
 **You do not need to install Python, Anaconda, or Miniconda beforehand.** Setup can install the required runtime automatically. No paid transcription API or API key is required by this app.
 
-## 1. Download the app
 
-1. Open this project's GitHub repository.
-2. Open **Releases** and select the latest release.
-3. Under **Assets**, download **`Transcript_Studio_v1.zip`**, or the named Windows package supplied with that release.
-4. Find the downloaded ZIP in File Explorer, usually in **Downloads**.
+## 1. Download and extract the app
+
+1. Open https://github.com/rkarkee101/Transcript-Studio/.
+2. Click **Transcript_Studio.zip** in the file list near the top.
+3. On the next page, click the **downward-arrow download button (↓)** on the right, next to **Raw**. Its tooltip says **Download raw file**.
+4. Find the downloaded ZIP in your **Downloads** folder.
 5. Right-click it and choose **Extract All**.
-6. Extract it to a folder you plan to keep, then open the extracted app folder. You should see **`SETUP.cmd`** and **`START.cmd`** alongside the other app files.
+6. Open the extracted folders until you see **SETUP.cmd** and **START.cmd**.
 
-Run the app from the extracted folder, not from inside the ZIP. Keep all the files together. If someone sent you the ZIP directly, begin with step 4.
-
-The named app ZIP is the intended download. GitHub also provides automatically generated source archives; their folder layout may differ.
+Run **SETUP.cmd** for the initial installation. After setup finishes, run **START.cmd** to open the app.
 
 ## 2. Install the required software
 
