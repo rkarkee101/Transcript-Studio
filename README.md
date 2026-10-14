@@ -149,6 +149,26 @@ A complete installation on a clean second Windows computer still needs a pilot t
 
 This is a source package with setup scripts. It requires dependency downloads and is not a signed, standalone executable or an offline installation bundle.
 
+Uninstall Transcript Studio
+
+The current version uses manual removal; it has no dedicated Transcript Studio uninstaller.
+
+1. Open the app and click **Quit app**, then close its browser tab. Allow any setup or transcription process to finish stopping. If Windows says files are in use later, restart Windows and leave Transcript Studio closed.
+2. **Keep any TXT transcripts you want.** The default `Documents\YouTubeTranscripts` folder is separate from the app. If you chose an output folder inside the extracted app folder or `%LOCALAPPDATA%\TranscriptStudio`, move those TXT files elsewhere before continuing.
+3. Press **Windows + R**, enter **`%LOCALAPPDATA%\TranscriptStudio`**, and press **Enter**. If the folder does not exist, continue to step 5.
+4. If this folder contains **`miniforge3`**, open that subfolder and run its **Miniforge uninstaller** (the file whose name begins with `Uninstall-` and ends with `.exe`). Follow its prompts and wait for it to finish. This removes the Miniforge copy installed inside Transcript Studio's folder. If there is no `miniforge3` subfolder, skip this step. If you use other Conda installations, leave any options for removing shared user configuration or shared caches unchecked. [About the Windows Conda uninstaller](https://conda.github.io/constructor/howto/).
+5. In File Explorer, open **`%LOCALAPPDATA%`** and delete only the **`TranscriptStudio`** folder, if it remains. This removes the app's settings, logs, installer downloads, model files, and separate Python environment stored there. If you deliberately configured a different app-data location, use that location instead.
+6. Delete the **Transcript Studio** desktop shortcut and the extracted app folder containing `START.cmd` and `SETUP.cmd`. You can also delete the downloaded ZIP if you no longer need it.
+
+Keep your existing **Anaconda, Miniconda, Miniforge, or Buzz environment** if setup reused it. Existing Buzz model caches outside the Transcript Studio folder also remain available to Buzz. Do not delete shared `.conda`, `.condarc`, or general model-cache folders as part of these steps.
+
+### Optional: remove Microsoft C++ Build Tools
+
+If you installed **Visual Studio 2022 Build Tools** only for this app and no other projects need it, open **Visual Studio Installer**, find **Build Tools 2022**, and choose **More → Uninstall**. Follow the prompts. Otherwise, leave Build Tools installed. See [Microsoft's uninstall instructions](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022).
+
+Deleting the app files does not delete transcripts saved outside those folders. Delete unwanted TXT files separately from the output folder you selected.
+
+
 ## License
 
 The original app code is available under the [MIT license](LICENSE.txt). Third-party tools and models retain their own licenses and terms;
