@@ -149,7 +149,7 @@ A complete installation on a clean second Windows computer still needs a pilot t
 
 This is a source package with setup scripts. It requires dependency downloads and is not a signed, standalone executable or an offline installation bundle.
 
-Uninstall Transcript Studio
+##Uninstall Transcript Studio
 
 The current version uses manual removal; it has no dedicated Transcript Studio uninstaller.
 
